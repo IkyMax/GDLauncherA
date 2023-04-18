@@ -417,8 +417,8 @@ export function downloadJavaLegacyFixer() {
 
 export function login(
   username,
-  password, 
-  offlineMode = false,  
+  password,
+  offlineMode = false,
   redirect = true
 ) {
   return async (dispatch, getState) => {
