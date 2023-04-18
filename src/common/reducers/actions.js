@@ -415,7 +415,7 @@ export function downloadJavaLegacyFixer() {
   };
 }
 
-export function login(  username,  password,  offlineMode = false,  redirect = true) {
+export function login(⏎··username,⏎··password,⏎··offlineMode·=·false,⏎··redirect·=·true⏎) {
   return async (dispatch, getState) => {
     const {
       app: { isNewUser, clientToken }
