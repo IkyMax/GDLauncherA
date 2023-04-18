@@ -415,7 +415,7 @@ export function downloadJavaLegacyFixer() {
   };
 }
 
-export function login(username, password, offlineMode = false, redirect = true) {
+export function login(  username,  password,  offlineMode = false,  redirect = true) {
   return async (dispatch, getState) => {
     const {
       app: { isNewUser, clientToken }
@@ -423,8 +423,9 @@ export function login(username, password, offlineMode = false, redirect = true) 
     if (!username || !password) {
       throw new Error('No username or password provided');
     }
-     try {
-    if (!offlineMode) {
+    try {
+      let data = null;
+      if (!offlineMode) {
         try {
           ({ data } = await mcAuthenticate(username, password, clientToken));
           data.accountType = ACCOUNT_MOJANG;
