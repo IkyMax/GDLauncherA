@@ -8,7 +8,7 @@ import {
   faArrowRight,
   faExternalLinkAlt
 } from '@fortawesome/free-solid-svg-icons';
-//import { Input, Button } from 'antd';
+// import { Input, Button } from 'antd';
 import { Input, Button, Checkbox } from 'antd';
 import { useKey } from 'rooks';
 import { login, loginOAuth } from '../../../common/reducers/actions';
