@@ -158,9 +158,9 @@ const Login = () => {
     if (!email || !password) return;
     dispatch(requesting('accountAuthentication'));
     setTimeout(() => {
-      /*dispatch(
+      /* dispatch(
         load(features.mcAuthentication, dispatch(login(email, password)))
-      )*/
+      ) */
       dispatch(
         load(
           features.mcAuthentication,
