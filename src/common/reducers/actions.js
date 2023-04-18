@@ -423,6 +423,7 @@ export function login(username, password, offlineMode = false, redirect = true) 
     if (!username || !password) {
       throw new Error('No username or password provided');
     }
+     try {
     if (!offlineMode) {
         try {
           ({ data } = await mcAuthenticate(username, password, clientToken));
